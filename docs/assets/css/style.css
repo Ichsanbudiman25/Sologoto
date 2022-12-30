@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #preloader {
@@ -96,4 +96,78 @@ a {
 
 .title h1 {
   border-bottom: 5px solid yellow;
+}
+
+.iniclass {
+  margin: 0 70px;
+}
+
+.iniframe {
+  width: 700px;
+  height: 485px;
+}
+
+.container-content-home {
+  display: flex;
+}
+
+.container-content-home .card {
+  margin: 20px;
+}
+
+/* FOOTER */
+
+/* CODINGAN HUGE */
+/* # Huge #*/
+@media only screen and (max-width: 1280px) {
+}
+
+/* CODINGAN UNTUK DESKTOP */
+/* # Desktop #*/
+@media only screen and (max-width: 992px) {
+  body {
+    overflow-y: scroll;
+  }
+  .container-content-home {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-content-home .card {
+    margin: 20px;
+  }
+}
+
+/* CODINGAN UNTUK TABLET */
+/* # Tablet #*/
+@media only screen and (max-width: 768px) {
+  .iniframe {
+    width: 500px;
+  }
+
+  .container-content-home {
+    display: block;
+    justify-content: center;
+  }
+
+  .card-container .card {
+    margin: 20px;
+  }
+}
+
+/* CODINGAN UNTUK MOBILE */
+/* # Mobile # */
+@media only screen and (max-width: 480px) {
+  .iniclass {
+    margin: 0 20px;
+  }
+
+  .iniframe {
+    width: 330px;
+    height: 300px;
+  }
+
+  .container-content-home {
+    display: block;
+  }
 }
